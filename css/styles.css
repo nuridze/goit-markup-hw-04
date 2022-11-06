@@ -25,7 +25,7 @@ p {
 }
 .link {
   text-decoration: none;
-  color: #757575;
+  color:#AFB1B8;
 }
 .list {
   list-style: none;
@@ -304,18 +304,20 @@ p {
 .team-item:last-child {
   margin: 0;
 }
+
 .team-item:hover,
 .team-item:focus {
   background: #2196f3;
+  
 }
-
+.team-item:hover svg{
+  fill: #ffffff;
+}
 .networks {
-    display: block;
+  display: block;
   fill: currentColor;
 }
-.networks:hover {
-  color: #ffffff;
-}
+
 .location {
   align-self: flex-start;
 }
