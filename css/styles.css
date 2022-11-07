@@ -292,6 +292,7 @@ p {
   
 }
 .team-item {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,7 +300,6 @@ p {
   height: 44px;
   border-radius: 50%;
   margin-right: 10px;
- 
 }
 .team-item:last-child {
   margin: 0;
@@ -417,22 +417,25 @@ p {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.icon-clients:hover,
-.icon-clients:focus {
-  border: 1px solid #2196f3;
 }
 .icon-clients:not(:last-child) {
   margin-right: 30px;
 }
+
+.icon-clients:hover,
+.icon-clients:focus {
+  border:solid  #2196f3;
+background-color:#ffffff;
+
+}
+.icon-clients:hover svg{
+  fill: #2196f3;
+}
 .clients-link {
-  display: flex;
+  display: block;
   width: 106px;
   height: 60px;
-  fill: currentColor;
+  fill:currentColor;
 }
 
 /* ФУТЕР */
